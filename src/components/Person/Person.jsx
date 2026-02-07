@@ -1,7 +1,9 @@
 import React from 'react';
 
 export const Person = ({ person }) => {
-  const partnerStatus = person.sex === 'm' ? 'wife' : 'husband';
+  const partnerStatus = person.sex === 'm'
+    ? 'wife'
+    : 'husband';
 
   const partnerMessage = person.isMarried
     ? `${person.partnerName} is my ${partnerStatus}`
